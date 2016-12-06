@@ -1,0 +1,80 @@
+/*
+This CSS is really just for this demo page
+But take a look at the comments to see how I set padding
+and borders on the images
+*/
+/*
+This CSS is really just for this demo page
+But take a look at the comments to see how I set padding
+and borders on the images
+*/
+
+.Collage img {
+    transition: all .5s ease-in-out;
+}
+
+.Collage img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.Collage {
+    /*This is where you set the padding you want between the images*/
+    
+    padding: 0;
+    background: #fff!important;
+    margin: 0;
+}
+
+.Collage img {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: bottom;
+    opacity: 1;
+    width: 100%;
+    /*This is where you set the border you want for the image*/
+}
+/* In this example, this is the main item being resized */
+
+.Image_Wrapper {
+    /* to get the fade in effect, set opacity to 0 on the first element within the gallery area */
+    
+    opacity: 0;
+    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    background: #000;
+    margin: 0;
+}
+
+.Caption_Content {
+    /* padding:10px; */
+    
+    color: #FFF;
+    padding: 20px;
+}
+
+.Image_Wrapper:hover:before {
+    content: "\f002";
+    color: #fff;
+    z-index: 99;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 75px;
+    height: 75px;
+    line-height: 70px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: 'fontawesome';
+    font-size: 25px;
+}

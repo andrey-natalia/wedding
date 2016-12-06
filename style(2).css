@@ -1,0 +1,917 @@
+﻿﻿ /*
+Theme Name: Ulemulem wedding wordpress theme
+Theme URI: http://themeforest.net
+Author: themesmile
+Author URI: http://themeforest.net/user/themesmile/portfolio
+Description: Ulemulem – Responsive Wedding Wordpress Theme is the modern wordpress wedding theme. With the concept of a clean, simple and modern you will get a template other than generally from existing ones. So that your wedding invitations fill more elegant. With several options menu navigation This theme is perfect for your wedding invitation. 
+Version: 1.3
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light
+Text Domain: demian
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+ body {
+     background: #fff;
+     overflow-x:hidden!important; 
+
+ }
+ 
+ html {
+     margin: 0!important;
+ }
+ 
+ .show_0 {
+     display: none!important;
+ }
+ 
+ .show_1 {
+     display: block!important;
+ }
+ 
+ .bg_color1 {
+     background: #f1f1f1!important;
+ }
+ 
+ .bg_color2 {
+     background: #666!important;
+ }
+ 
+ .post {
+     background: #fff;
+     padding: 40px;
+     border-radius: 5px;
+ }
+ 
+ .format-image img {
+     width: 100%;
+ }
+ 
+ .menu ul {
+     list-style: none;
+     margin: 0;
+ }
+ 
+ .menu ul ul {
+     display: none;
+ }
+ 
+ .menu li {
+     display: inline;
+     float: left;
+     padding: 0 8px 0 4px;
+ }
+ 
+ .menu-item {}
+ 
+ .menu-item a {
+     text-decoration: none;
+     color: #3eaf00;
+ }
+ 
+ .sub-menu li a {
+     margin: 0!important;
+     width: 100%!important;
+ }
+ 
+ .menu-item a:hover {
+     color: #666;
+ }
+ 
+ .demian-top-menu ul {
+     margin-top: 20px;
+     position: absolute;
+     right: 30px;
+ }
+ 
+ .demian-top-menu ul li {
+     display: inline-block;
+     margin-right: 30px;
+ }
+ 
+ .demian-top-menu ul li a {
+     font-size: 12px;
+ }
+ 
+ .demian-top-menu ul li a:hover {
+     color: #222 !important;
+     background-color: #FFF !important;
+     border-radius: 0px;
+     font-weight: 700;
+     margin: -9px 0px 0px;
+     height: 56px;
+     display: block;
+     line-height: 40px;
+     border-bottom: 5px solid #222;
+ }
+ 
+ .navbar-nav.navbar-right ul {
+     margin: 45px 0 0;
+ }
+ 
+ .navbar-nav.navbar-right ul li {
+     list-style: none;
+     display: inline-block;
+     margin: 0 15px 0;
+ }
+ 
+ .navbar-nav.navbar-right ul li a {
+     font-size: 13px;
+     color: #ccc;
+ }
+ 
+ .navbar-nav.navbar-right ul li a:hover {}
+ /* #wpadminbar{
+     z-index: -1!important;
+ }*/
+ 
+ @media(max-width:767px) {
+     .navbar-nav.navbar-right ul {
+         margin: 15px 0 20px;
+     }
+     .navbar-nav.navbar-right ul li {
+         list-style: none;
+         display: block;
+         margin: 0;
+     }
+     .navbar-nav.navbar-right ul li a {
+         font-size: 13px;
+         color: #ccc;
+         margin: 0 0 5px 0;
+     }
+     .navbar-nav.navbar-right ul li a:hover {
+         color: #fff !important;
+     }
+ }
+ 
+ @media (max-width: 1200px) {
+     .navbar-nav.navbar-right ul {
+         margin: 15px 0 20px;
+     }
+     .navbar-nav.navbar-right ul li {
+         list-style: none;
+         display: block;
+         margin: 0;
+     }
+     .navbar-nav.navbar-right ul li a {
+         font-size: 13px;
+         color: #ccc;
+         margin: 0 0 5px 0;
+     }
+     .navbar-nav.navbar-right ul li a:hover {
+         color: #fff !important;
+     }
+ }
+ /*** HEADER : OTHER ***/
+ /*** CONTENT : POSTS AND PAGES ***/
+ /* Entry and Page Titles */
+ 
+ .sticky,
+ .tag-sticky-2 {
+     background: #fff;
+     border: 1px solid #eee;
+     padding: 10px 20px 60px;
+     border-radius: 4px;
+     margin: 0 40px;
+ }
+ 
+ .sticky .entry-meta,
+ .tag-sticky-2 .entry-meta {
+     font-size: 16px;
+     margin: 30px -20px 30px -20px;
+     border-top: 1px dashed #eee;
+     border-bottom: 1px dashed #eee;
+     padding: 20px;
+ }
+ 
+ input#searchsubmit {
+     display: none;
+ }
+ 
+ label.screen-reader-text {
+     display: none;
+ }
+ 
+ .image-page img {
+     width: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+ }
+ 
+ .widget #searchform {
+     max-width: 100%;
+ }
+ 
+ .entry-content .size-full {
+     width: auto;
+     height: 100%;
+ }
+ 
+ .entry-content table {
+     border-collapse: collapse;
+     margin: 0 0 40px;
+     padding: 0 0 40px;
+ }
+ 
+ .entry-content td,
+ .entry-content th {
+     border: 1px solid #ddd;
+     padding: 1rem;
+     text-align: left;
+ }
+ 
+ .entry-content dt {
+     font-weight: bold;
+     margin: 20px 0 5px;
+ }
+ 
+ .entry-content dd {
+     line-height: 30px;
+     border-top: 1px dashed #ddd;
+     border-bottom: 1px dashed #ddd;
+ }
+ 
+ .entry-content cite {
+     font-style: italic;
+     font-weight: bold;
+ }
+ 
+ img.wp-post-image {
+     width: 100%;
+     height: 100%;
+     border-radius: 0;
+     margin: 0 0 20px 0;
+    
+ }
+img.attachment-full{
+      object-fit: cover;
+      height: 200px;
+      border-radius: 2px;
+ }
+ .ulem-blog-thumb-post {
+     height: 100%!important;
+     border-radius: 0!important;
+ }
+ 
+ .ulem-blog-thumb-postpage {
+     height: 100%!important;
+     border-radius: 0!important;
+     margin: 50px 0 30px 0!important;
+ }
+ 
+ .post-ulem-image {
+     padding: 20px;
+ }
+ 
+ .tags-links {
+     margin: 30px 0;
+     padding: 20px 0;
+     display: block;
+     /*    border-bottom: 1px dashed #eee; */
+ }
+ 
+ .tags-links a {
+     background: #B0B8BD;
+     padding: 4px 8px;
+     font-size: 14px;
+     color: #fff!important;
+     border-radius: 3px;
+ }
+ 
+ h1.entry-title {}
+ 
+ h2.entry-title {
+     margin: 20px 0 0;
+     padding: 0;
+ }
+ 
+ h2.entry-title a {
+     color: #777;
+     text-decoration: none;
+     font-size: 26px;
+     letter-spacing: 4px;
+ }
+ 
+ h1.page-title {}
+ /* Media Alignment */
+ 
+ .alignright {
+     /* Style for right-aligned images in posts */
+     
+     padding: 8px 0 8px 8px;
+     float: right;
+ }
+ 
+ .alignleft {
+     /* Style for left-aligned images in posts */
+     
+     padding: 8px 8px 8px 0;
+     float: left;
+     margin-bottom: 10px!important;
+     margin-right: 20px!important;
+     margin-left: 0px!important;
+ }
+ /* Entry Content */
+ 
+ .entry-content {
+     width: 100%!important;
+     padding: 0;
+ }
+ 
+ .entry-content h2 {}
+ 
+ .entry-content p {
+     margin-bottom: 25px;
+ }
+ 
+ .entry-content ul li {
+     font-size: 16px;
+     line-height: 1.7em;
+ }
+ 
+ .entry-content blockquote {
+     text-align: left;
+ }
+ 
+ .entry-content blockquote p {
+     text-align: left;
+     font-size: 15px;
+     border-left: 5px solid #eee;
+     padding: 0 0 0 20px;
+ }
+ 
+ .entry-content blockquote:after {
+     display: none;
+ }
+ 
+ .entry-content blockquote:before {
+     top: 30px;
+     left: 15px;
+ }
+ 
+ .post-excerpt {
+     margin: 0 0 40px 0;
+     /* padding: 0 0 40px 0; */
+     
+     position: relative;
+ }
+ 
+ .ulem-blog {
+     margin: 15px 0px;
+     font-size: 13px;
+     text-transform: uppercase;
+     font-weight: 100;
+     color: #999;
+     padding: 15px 0px;
+     border-top: 1px solid #eee;
+     border-bottom: 1px solid #eee;
+     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+ }
+ 
+ a.read-more {
+     background-color: #ccc!important;
+     color: #fff;
+     position: absolute;
+     left: 0;
+     bottom: -80px;
+     z-index: 1;
+     height: 35px;
+     line-height: 35px;
+     padding: 0 12px;
+     border-radius: 4px;
+     /* text-transform: uppercase; */
+     
+     font-size: 15px;
+ }
+ 
+ .post-excerpt p {
+     font-size: 14px;
+     line-height: 1.7em;
+     font-weight: normal;
+     color: #777;
+     padding: 0!important;
+     text-align: left;
+ }
+ 
+ span.entry-date {
+     font-size: 13px;
+     padding: 0;
+     text-transform: uppercase;
+     color: #ccc;
+     margin: 0;
+ }
+ 
+ .post-header {    margin: -20px 0 0;}
+ 
+ span.meta-nav {
+     /* background: #949494; */
+     
+     color: #B0B8BD;
+     padding: 5px 0;
+     display: table;
+     border-radius: 2px;
+     margin-top: 30px;
+     position: relative;
+     font-size: 16px;
+     font-style: italic;
+ }
+ 
+ span.meta-nav:hover {
+     cursor: pointer!important;
+ }
+ 
+ .entry-content a:hover {}
+ 
+ .entry-content h1,
+ h2,
+ h3,
+ h4,
+ h5 {}
+ 
+ .entry-content ol li {}
+ 
+ .entry-utility {
+     /* Style for the entry utility, which sits below a post and provides info like categories, tags, feeds, and an edit link (for authors) */
+     
+     background: #f1f1f1;
+     padding: 20px;
+     margin: 40px 0 0;
+     font-size: 14px;
+ }
+ 
+ .entry-utility a {
+     color: #000!important;
+     font-weight: 700;
+ }
+ 
+ .entry-meta {
+     color: #B0B8BD;
+     font-size: 14px;
+     margin: 20px 0 20px 0;
+     font-style: italic;
+     border-bottom: 1px solid #efefef;
+     border-top: 1px solid #efefef;
+     padding: 10px 0
+ }
+ 
+ span.meta-sep {
+     margin: 0 10px;
+     border-right: 1px solid #ccc;
+ }
+ 
+ .skip-link {
+     /* Style for the skip link */
+     /*position: absolute;
+    left: -9000px;*/
+ }
+ 
+ .navigation {
+     /* Style for the navigation links (next/previous post) on a given post */
+ }
+ 
+ input#s:before {
+     content: "l";
+     display: block;
+     color: #333;
+ }
+ 
+ a.url.fn.n,
+ span.comments-link a,
+ .edit-link a {
+     color: #B0B8BD;
+ }
+ /*** CONTENT : COMMENTS ***/
+ 
+ .read-more {
+     color: #949494;
+     margin: 20px 0;
+ }
+ 
+ a.page-numbers {
+     background: #ccc;
+     height: 30px;
+     width: 30px;
+     display: inline-block;
+     text-align: center;
+     line-height: 30px;
+     color: #fff!important;
+     border-radius: 50%;
+ }
+ 
+ span.page-numbers.current {
+     background: #333;
+     height: 30px;
+     width: 30px;
+     display: inline-block;
+     text-align: center;
+     line-height: 30px;
+     color: #fff!important;
+     border-radius: 50%;
+ }
+ 
+ .wp-image-907 {
+     width: 100%!important;
+     height: auto!important;
+ }
+ 
+ div#comments {
+     /* Style that affects the DIV containing all the comments */
+ }
+ 
+ .comments h3 {
+     /* H3 header style for comments */
+     
+     font-weight: 700;
+     margin-bottom: 50px;
+ }
+ 
+ .comments ol {
+     /* Comments are displayed as ordered lists by default, so you want to style that list so it looks the way you want */
+ }
+ 
+ .comments ol li {
+     /* Style each list item in the comments ordered list */
+     
+     list-style: none;
+     margin: 40px 0;
+ }
+ 
+ .comments img {
+     float: left;
+     margin: 0 20px 10px 0;
+     border-radius: 50%;
+     float: left;
+     margin: 0 12px 8px 0;
+ }
+ 
+ .comments .comment {
+     /* Style that applies to each individual comment in a series of comments */
+ }
+ 
+ .comment-author.vcard a {
+     color: #000!important;
+     font-weight: bold;
+ }
+ 
+ #form-allowed-tags p {
+     font-size: 14px;
+     margin: 30px 0;
+ }
+ 
+ ul.children {
+     margin-left: 40px;
+ }
+ 
+ .children ul li {
+     /* A style that refers to the children (as in, responses to) any given comment */
+ }
+ 
+ .comment-reply-link {
+     margin-left: 45px;
+     font-size: 14px;
+ }
+ 
+ .comment-reply-link a {
+     background: #2E3639;
+     padding: 5px 8px;
+     text-transform: uppercase;
+     color: #fff!important;
+     font-size: 11px;
+     font-weight: bold;
+     border-radius: 2px;
+ }
+ 
+ span.fn.n {
+     font-weight: bold;
+     text-transform: uppercase;
+ }
+ 
+ .comment-meta {
+     color: #B0B8BD!important;
+     font-size: 16px;
+     margin: 10px 0;
+ }
+ 
+ .comment-content {
+     margin: 10px 0 20px 90px;
+ }
+ 
+ div#respond {
+     /* DIV that contains the comment response form */
+     
+     border-top: 1px solid #eee;
+     border-bottom: 1px solid #eee;
+     padding: 20px 0;
+ }
+ 
+ div#respond h3 {
+     /* H3 header for the comment response form */
+     
+     font-size: 21px;
+ }
+ /*** CONTENT : SIDEBAR ***/
+ 
+ .textwidget img {
+     width: 100%;
+     height: auto;
+ }
+ 
+ .textwidget select,
+ .widget_archive select,
+ .widget_categories select {
+     width: 100%;
+     border: 2px solid #dce4ec;
+     padding: 6px 10px 6px 5px;
+     border-radius: 4px;
+ }
+ 
+ img.wp-smiley {
+     width: auto;
+ }
+ 
+ div#primary {
+     /* Primary Widget Area DIV */
+ }
+ 
+ div#secondary {
+     /* Secondary Widget Area DIV */
+ }
+ 
+ .widget-area {
+     background-color: rgba(255, 255, 255, 0.64);
+     padding: 15px 30px;
+     display: inline-table;
+     width: 100%;
+ }
+ /* Class that applies to BOTH widget areas */
+ 
+ .widget_search input[type="text"] {
+     font: 15px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+     width: 100%;
+     border: 3px solid #dce4ec;
+     padding: 5px 0 5px 45px;
+     top: 0px;
+     position: relative;
+     z-index: 0;
+ }
+ 
+ .widget_search div:before {
+     height: 40px;
+     width: 40px;
+     content: "\e077";
+     display: inline-block;
+     color: #dce4ec;
+     position: relative;
+     float: left;
+     top: 52px;
+     left: 11px;
+     font-family: "dripicons";
+     font-style: normal;
+     font-weight: normal;
+     font-variant: normal;
+     z-index: 1;
+ }
+ 
+ #wp-calendar caption {
+     font-size: 16px;
+     font-weight: 700;
+     text-transform: uppercase;
+     margin: 70px 0 20px;
+     border: 0px solid #555;
+     text-align: center;
+     padding: 0;
+     color: #555;
+     width: 100%;
+     border-radius: 2px;
+ }
+ 
+ .tagcloud a {
+     background: #7FBB00;
+     font-size: 13px !important;
+     color: #fff!important;
+     padding: 10px;
+     margin: 0px 5px 10px 0px;
+     border-radius: 2px;
+     text-transform: uppercase!important;
+     display: inline-block;
+ }
+ 
+ #wp-calendar {
+     width: 100%;
+ }
+ 
+ #wp-calendar td,
+ #wp-calendar th {
+     text-align: center;
+     color: #555;
+ }
+ 
+ td#next a {
+     background: #222;
+     float: right;
+     padding: 0 10px;
+     font-size: 13px;
+     border-radius: 4px;
+     color: #fff!important;
+     text-transform: uppercase;
+     text-align: center;
+     margin-top: 20px;
+ }
+ 
+ td#prev a {
+     background: #222;
+     float: left;
+     padding: 0 10px;
+     font-size: 13px;
+     border-radius: 4px;
+     color: #fff!important;
+     text-transform: uppercase;
+     text-align: center;
+     margin-top: 20px;
+ }
+ 
+ td#today {
+     font-weight: bold;
+     color: #000;
+     background: #dce4ec;
+     border-radius: 3px;
+ }
+ 
+ hr {
+     width: 100%;
+ }
+ 
+ div#content {
+     padding: 20px 0 0;
+ }
+ 
+ .xoxo {
+     margin: 0;
+     list-style: none;
+     padding: 0 0 0 10px;
+ }
+ 
+ .widget_rss cite {
+     font-size: 12px;
+ }
+ 
+ .widget-title {
+     font-size: 18px;
+     font-weight: 700;
+    /* text-transform: uppercase;*/
+     /* font-family: 'Raleway', sans-serif; */
+     
+     margin: 25px 0 15px;
+     border-bottom: 1px solid #ccc;
+     text-align: left;
+     padding: 0 0 15px 0;
+     color: #555;
+     width: 100%;
+ }
+ 
+ .widget-title span {
+     padding: 0px 0 12px;
+     border-bottom: 3px solid #7fbb00;
+ }
+ 
+ .widget-container ul {
+     padding: 0;
+ }
+ 
+ .widget-container ul li {
+     list-style: none;
+     padding: 5px 0;
+     border-bottom: 1px solid #ecf0f1;
+ }
+ 
+ .widget-container ul li a {
+     color: #666!important;
+ 
+     text-decoration: none;
+ }
+ 
+ .widget-container ul li ul {
+     padding: 0 0 0 20px;
+ }
+ 
+ .widget-container ul li ul li {
+     list-style: none;
+     padding: 10px 0;
+     border-bottom: 0px solid #ddd;
+ }
+ 
+ .widget-container ul li ul li a {
+     color: #747C81!important;
+     padding: 0;
+     margin: 0px 0 0 -75px;
+ }
+ 
+ .widget-container ul li ul li:before {
+     content: "-";
+     display: inline-block;
+     color: #B0B8BD;
+     margin-right: 10px;
+ }
+ /*** FOOTER ***/
+ 
+ div#footer {
+     float: left;
+     clear: both;
+ }
+ /*** YOUR CSS ***/
+ 
+ .wp-caption {
+     width: 100%!important;
+ }
+ 
+ .wp-caption-text {
+     font-size: 13.5px;
+     margin: 10px 0 0;
+     font-style: italic;
+ }
+ 
+ .gallery-caption {}
+ 
+ .bypostauthor {}
+ 
+ .aligncenter {}
+ 
+ .comment-respond {
+     display: none;
+ }
+ 
+ .portfolio .text-category {
+     display: block!important;
+     font-size: 11px!important;
+     font-weight: normal!important;
+     text-transform: capitalize!important;
+ }
+ 
+ span.page-scroll {
+     background: #000;
+     padding: 0;
+     height: 40px;
+     width: 40px;
+     border-radius: 50%;
+     display: block;
+     margin: 150px auto 0 auto;
+     text-align: center;
+     padding: 5px 0 0 9px;
+     color: #fff!important;
+ }
+ 
+ span.page-scrol a,
+ span.page-scrol a:hover {
+     text-decoration: none;
+     font-size: 25px;
+     color: #fff!important;
+ }
+ 
+ .animated {
+     -webkit-animation-duration: 1s;
+     animation-duration: 1s;
+     -webkit-animation-fill-mode: both;
+     animation-fill-mode: both;
+     -webkit-animation-timing-function: linear;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+     -webkit-animation-iteration-count: infinite;
+ }
+ 
+ @-webkit-keyframes pulse {
+     0% {
+         -webkit-transform: scale(1);
+     }
+     70% {
+         -webkit-transform: scale(1.2);
+     }
+     100% {
+         -webkit-transform: scale(1);
+     }
+ }
+ 
+ @keyframes pulse {
+     0% {
+         transform: scale(1);
+     }
+     70% {
+         transform: scale(1.2);
+     }
+     100% {
+         transform: scale(1);
+     }
+ }
+ 
+ .pulse {
+     -webkit-animation-name: pulse;
+     animation-name: pulse;
+ }
+ 
+ html {
+     margin-top: 0!important;
+ }
+ /*BLOG*/
