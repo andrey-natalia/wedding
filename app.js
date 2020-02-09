@@ -33,17 +33,17 @@
     //lightbox 
     $('.swipebox').swipebox();
     // fullscreen image slider
-    $('#maximage').maximage({
-        cycleOptions: {
-            fx: 'fade',
-            //speed: 3000, // Has to match the speed for CSS transitions in jQuery.maximage.css (lines 30 - 33)
-            speed: 3000,
-            timeout: 5000,
-            prev: '#arrow_left',
-            next: '#arrow_right',
-            pause: 0
-        }
-    });
+    // $('#maximage').maximage({
+    //     cycleOptions: {
+    //         fx: 'fade',
+    //         //speed: 3000, // Has to match the speed for CSS transitions in jQuery.maximage.css (lines 30 - 33)
+    //         speed: 3000,
+    //         timeout: 5000,
+    //         prev: '#arrow_left',
+    //         next: '#arrow_right',
+    //         pause: 0
+    //     }
+    // });
     //imagegallery
     $('#basicExample').justifiedGallery({
         rowHeight : 250,
